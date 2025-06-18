@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinBotAnalytics.com - Premium FinTech Domain for Sale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #10b981;
+            --dark: #0f172a;
+            --light: #f8fafc;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            text-align: center;
+            padding: 5rem 0;
+            background: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            background-blend-mode: overlay;
+            background-color: rgba(15,23,42,0.7);
+            color: white;
+            border-radius: 24px;
+            margin-bottom: 3rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-family: 'Space Grotesk', sans-serif;
+            background: linear-gradient(90deg, #ffffff, #a7f3d0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-weight: 300;
+        }
+        
+        .domain-display {
+            font-size: 4rem;
+            font-weight: 700;
+            color: white;
+            background: var(--accent);
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            border: 4px solid white;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--accent);
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .highlight-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .highlight-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .highlight-card h3 {
+            color: var(--dark);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .pricing-section {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            margin: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .price-tag {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 1rem 0;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .price-note {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--accent);
+        }
+        
+        .feature-item h3 {
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .payment-method {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .payment-method img {
+            height: 40px;
+            margin-right: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            background: var(--dark);
+            color: white;
+            border-radius: 16px;
+        }
+        
+        .industry-logos {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 3rem 0;
+        }
+        
+        .industry-logo {
+            height: 60px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .industry-logo:hover {
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .domain-display {
+                font-size: 2.5rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Premium FinTech Domain Available</h1>
+            <p class="tagline">The ultimate brandable domain for financial analytics, AI banking solutions, and investment technology</p>
+            <div class="domain-display">FINBOTANALYTICS.COM</div>
+            <a href="#inquiry" class="cta-button">MAKE AN OFFER</a>
+            <a href="https://sedo.com/search/details/?domain=finbotanalytics.com" class="cta-button" style="background: var(--accent); color: white;">BUY VIA SEDO</a>
+        </header>
+        
+        <section class="highlight-section">
+            <div class="highlight-card">
+                <h3>Why This Domain?</h3>
+                <p><strong>FinBotAnalytics.com</strong> combines three powerful financial tech concepts in one memorable brand name. The .com extension establishes immediate authority in the banking and fintech sectors.</p>
+            </div>
+            
+            <div class="highlight-card">
+                <h3>Perfect For</h3>
+                <p>AI banking tools, financial analytics platforms, robo-advisors, investment algorithms, fraud detection systems, and any fintech company leveraging automation and data analysis.</p>
+            </div>
+            
+            <div class="highlight-card">
+                <h3>Investment Value</h3>
+                <p>Fintech domains have seen 300%+ appreciation in the last 5 years. This is both an operational asset and appreciating digital property in the hottest tech sector.</p>
+            </div>
+        </section>
+        
+        <div class="industry-logos">
+            <img src="https://logo.clearbit.com/stripe.com" alt="Stripe" class="industry-logo">
+            <img src="https://logo.clearbit.com/plaid.com" alt="Plaid" class="industry-logo">
+            <img src="https://logo.clearbit.com/chainalysis.com" alt="Chainalysis" class="industry-logo">
+            <img src="https://logo.clearbit.com/bloomberg.com" alt="Bloomberg" class="industry-logo">
+            <img src="https://logo.clearbit.com/quantconnect.com" alt="QuantConnect" class="industry-logo">
+        </div>
+        
+        <section class="pricing-section">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Domain Pricing</h2>
+            <div class="price-tag">$2,500 USD</div>
+            <p class="price-note">Serious offers considered | Price negotiable for qualified buyers</p>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/SEDO_logo.svg/1200px-SEDO_logo.svg.png" alt="Sedo">
+                    <span>Secure Escrow</span>
+                </div>
+                <div class="payment-method">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Afternic_logo.svg/1200px-Afternic_logo.svg.png" alt="Afternic">
+                    <span>Verified Transfer</span>
+                </div>
+            </div>
+            <p style="max-width: 800px; margin: 1rem auto;">All transactions protected through Sedo or Afternic's secure transfer process. Domain will be pushed to your account only after payment verification.</p>
+        </section>
+        
+        <section class="features-section">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 2rem;">Ideal For These FinTech Applications</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>AI Banking Assistants</h3>
+                    <p>Perfect name for next-generation AI-powered banking chatbots and virtual financial assistants.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Investment Analytics</h3>
+                    <p>Ideal for platforms providing automated investment analysis and portfolio recommendations.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Fraud Detection</h3>
+                    <p>Excellent fit for AI-driven financial fraud prevention and anomaly detection systems.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Algorithmic Trading</h3>
+                    <p>Strong brand potential for quantitative trading platforms and automated trading bots.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>RegTech Solutions</h3>
+                    <p>Great for regulatory technology automating compliance and reporting processes.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>WealthTech</h3>
+                    <p>Memorable name for wealth management automation and robo-advisory services.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="inquiry" style="background: white; padding: 3rem; border-radius: 16px; margin: 3rem 0; text-align: center; border: 1px solid #e2e8f0;">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Ready to Own FinBotAnalytics.com?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Contact us directly to discuss purchase options or make an offer</p>
+            <a href="mailto:info@davidconnects.com?subject=FinBotAnalytics.com Purchase Inquiry" class="cta-button" style="background: var(--accent); color: white;">EMAIL TO PURCHASE</a>
+            <p style="margin-top: 2rem;">Or initiate secure purchase through our authorized brokers:</p>
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                <a href="https://sedo.com/search/details/?domain=finbotanalytics.com" style="padding: 1rem; background: #f8fafc; border-radius: 8px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/SEDO_logo.svg/1200px-SEDO_logo.svg.png" alt="Sedo" style="height: 30px;">
+                </a>
+                <a href="https://www.afternic.com/domain/finbotanalytics.com" style="padding: 1rem; background: #f8fafc; border-radius: 8px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Afternic_logo.svg/1200px-Afternic_logo.svg.png" alt="Afternic" style="height: 30px;">
+                </a>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2023 FinBotAnalytics.com - All Rights Reserved</p>
+            <p>Serious inquiries only from qualified buyers.</p>
+        </footer>
+    </div>
+</body>
+</html>
